@@ -26,6 +26,10 @@ public class Collectible : MonoBehaviour {
             spriteRenderer.enabled = false;
             boxCollider2d.enabled = false;
             Destroy(gameObject, audioSource.clip.length);
+            if (collision.gameObject.CompareTag("Player"))
+            {
+                Destroy(gameObject);
+            }
         }
     }
     // Use this for initialization
