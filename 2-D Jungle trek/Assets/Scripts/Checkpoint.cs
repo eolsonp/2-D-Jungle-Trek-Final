@@ -7,13 +7,10 @@ public class Checkpoint : MonoBehaviour
 {
     [SerializeField]
     private float inactivatedRotationSpeed = 100, activatedRotationSpeed = 300;
-
     [SerializeField]
     private float inactivatedScale = 1, activatedScale = 1.5f;
-
     [SerializeField]
     private Color inactivatedColor, activatedColor;
-
     private bool isActivated = false;
     private SpriteRenderer spriteRenderer;
     private AudioSource audioSource;
@@ -24,12 +21,10 @@ public class Checkpoint : MonoBehaviour
         audioSource = GetComponent<AudioSource>();
         UpdateColor();
     }
-
     private void Update()
     {
         UpdateRotation();
     }
-
     private void UpdateColor()
     {
        Color color = inactivatedColor;
@@ -41,7 +36,6 @@ public class Checkpoint : MonoBehaviour
 
         spriteRenderer.color = color;
     }
-
     private void UpdateScale()
     {
         float scale = inactivatedScale;

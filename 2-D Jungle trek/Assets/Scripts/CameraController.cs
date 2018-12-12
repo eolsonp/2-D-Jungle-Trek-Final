@@ -6,17 +6,12 @@ public class CameraController : MonoBehaviour
 {
 
     public GameObject player;
-
     private Vector3 offset;
-
     // Use this for initialization
     void Start()
     {
         offset = transform.position - player.transform.position;
     }
-
-    
-
     void LateUpdate()
     {
         // Set the position of the camera's transform to be the same as the player's, but offset by the calculated offset distance.

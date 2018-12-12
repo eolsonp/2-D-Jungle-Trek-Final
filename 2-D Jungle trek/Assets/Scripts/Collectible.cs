@@ -13,8 +13,7 @@ public class Collectible : MonoBehaviour {
     {
         audioSource = GetComponent<AudioSource>();
         spriteRenderer = GetComponent<SpriteRenderer>();
-        boxCollider2d = GetComponent<BoxCollider2D>();
-        
+        boxCollider2d = GetComponent<BoxCollider2D>();   
     }
     private void OnTriggerEnter2D(Collider2D collision)
     {
@@ -31,7 +30,5 @@ public class Collectible : MonoBehaviour {
                 Destroy(gameObject);
             }
         }
-    }
-    // Use this for initialization
-    
+    }   
 }

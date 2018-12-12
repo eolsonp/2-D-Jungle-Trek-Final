@@ -13,7 +13,6 @@ public class Level2Door : MonoBehaviour {
             isPlayerInTrigger = true;
         }
     }
-
     private void OnTriggerExit2D(Collider2D collision)
     {
         if (collision.CompareTag("Player"))
@@ -21,7 +20,6 @@ public class Level2Door : MonoBehaviour {
             isPlayerInTrigger = false;
         }
     }
-
     private void Update()
     {
         if (Input.GetButtonDown("Activate") && isPlayerInTrigger)
