@@ -39,7 +39,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1033476502241392}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 21, y: 3.84, z: 0}
+  m_LocalPosition: {x: -9.46, y: 0.89, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -77,9 +77,9 @@ CircleCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.016455412, y: -0.5061362}
+  m_Offset: {x: -0.059164524, y: -0.5061364}
   serializedVersion: 2
-  m_Radius: 0.43252468
+  m_Radius: 0.3898158
 --- !u!61 &61804749425060480
 BoxCollider2D:
   m_ObjectHideFlags: 1
@@ -92,7 +92,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.018418312, y: 0.05142784}
+  m_Offset: {x: -0.0525856, y: 0.05142784}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -103,7 +103,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.93758965, y: 1.9337006}
+  m_Size: {x: 0.732584, y: 1.9337006}
   m_EdgeRadius: 0
 --- !u!95 &95220951177696998
 Animator:
@@ -136,7 +136,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   accelerationForce: 20
   maxSpeed: 5
-  jumpForce: 10.48
+  jumpForce: 7.61
   rb2d: {fileID: 50322515740514924}
   playerGroundCollider: {fileID: 61804749425060480}
   playerMovingPhysicsMaterial: {fileID: 6200000, guid: ff46134d62f58954480ff9c79c03eb8a,
@@ -193,7 +193,7 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 828523209
+  m_SortingLayerID: -400203847
   m_SortingLayer: 2
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: a554f1aa9b269ab49a72259d105653ad, type: 3}

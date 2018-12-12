@@ -3,22 +3,9 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class Door : MonoBehaviour
-{
+public class Level2Door : MonoBehaviour {
+
     private bool isPlayerInTrigger;
-
-    //cant use this becuase it triggers door twice, player has 2 colliders
-    //private void OnTriggerStay2D(Collider2D collision)
-    //{
-    //    if (collision.CompareTag("Player"))
-    //    {
-    //        if (Input.GetButtonDown("Activate"))
-    //        {
-    //            Debug.Log("Player activated door!");
-    //        }
-
-    //    }
-
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.CompareTag("Player"))
@@ -40,8 +27,7 @@ public class Door : MonoBehaviour
         if (Input.GetButtonDown("Activate") && isPlayerInTrigger)
         {
             Debug.Log("Player activated door!");
-            SceneManager.LoadScene("Level2");
+            SceneManager.LoadScene("Level3");
         }
     }
-
 }
